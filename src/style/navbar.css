@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Noto+Sans+Mono:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-background: #f7f7f7;
+    --navbar-background: #333333;
+    --text-primary: #212121; 
+    --text-secondary: #757575;
+    --button-background: #4a4a4a;
+    --button-hover: #2c2c2c;
+    --accent-color: #c7a000;
+    --link-color: #212121;
+}
+html {
+    font-size: 62.5%;
+    font-family: Abel;
+}  
+body {
+    font-size: 1.6rem;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #757575;
+    font-size: x-large;
+}
+a:hover {
+    transition: 0.3s ease-in;
+    color: white;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    background-color: #333333;
+    color: #212121;
+    
+}
+.nav_input {
+    display: flex;
+    align-items: center;
+    background-color: #4a4a4a;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 7px;
+    border-radius: 7px;
+    justify-content: space-between;
+    width: 210px;
+}
+.nav_input  input {
+    padding-left: 20px;
+    height: 40px;
+    width: 170px;
+    border-radius: 12px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #2c2c2c;
+    text-transform: uppercase;
+}
+.nav_input img {
+    height: 20px;
+    width: 20px;
+    align-self: center;
+}
+.nav h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #212121;
+    font-size: xx-large;
+}
+.nav_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around 20px;
+    gap: 3rem;
+}
+
+.nav_toggler div {
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background-color: #4a4a4a;
+}
+
+.nav_toggler {
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .nav_toggler {
+        display: block;
+    }
+    .nav_menu {
+        position: fixed;
+        top: 7vh;
+        right: 0;
+        width: 50%;
+        height: 93vh;
+        background-color: #333333;
+        padding-top: 20px;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s ease-in-out;
+    }
+}
+
+.nav_active {
+    transform: translateX(0);
+}
