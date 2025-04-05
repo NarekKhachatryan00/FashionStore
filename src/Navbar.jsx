@@ -15,12 +15,11 @@ function Navbar() {
                 <h2>Alora</h2>
                 <div className="nav_input">
                     <input type="search" placeholder="Search..."></input>
-                    <img src="./search.png"></img>
                 </div>
                 <ul className={active}>
-                    <li className="nav_item"><Link to="/">Home</Link></li>
-                    <li className="nav_item"><Link to="/">About</Link></li>
-                    <li className="nav_item"><Link to="/">Account</Link></li>
+                    <li className="nav_item"><Link to="/shop">Shop</Link></li>
+                    <li className="nav_item"><Link to="/about">About</Link></li>
+                    <li className="nav_item"><Link to="/register">Account</Link></li>
                 </ul>
                 <div onClick={navToggle} className="nav_toggler">
                     <div className="line1"></div>
