@@ -1,14 +1,18 @@
 import React from 'react';
 import './style/homepage.css';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 function HomePage() {
+    const history = useHistory()
+    const clicked = () => {
+        history.push('/shop')
+    }
     return (
     <div className="homepage">
         <div className="overlay"></div>
         <div className="content">
-            <button>
-                <Link to='/shop'>shop now</Link>
+            <button onClick={clicked}>
+                shop now
             </button>
         </div>
     </div>

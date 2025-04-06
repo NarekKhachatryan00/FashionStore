@@ -28,10 +28,28 @@ a {
     text-decoration: none;
     color: #757575;
     font-size: x-large;
+    position: relative;
+    transition: color 0.3s ease-in-out;
 }
+
 a:hover {
-    transition: 0.3s ease-in;
     color: white;
+}
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(0);
+}
+
+a:hover::after {
+    width: 100%;
+    left: 0;
 }
 .nav {
     display: flex;
