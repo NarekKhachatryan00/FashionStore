@@ -121,11 +121,11 @@ a:hover::after {
     }
     .nav_menu {
         position: fixed;
-        top: 7vh;
+        top: 8vh;
         right: 0;
         width: 50%;
         height: 93vh;
-        background-color: #333333;
+        background-color: #424141;
         padding-top: 20px;
         flex-direction: column;
         transform: translateX(100%);
