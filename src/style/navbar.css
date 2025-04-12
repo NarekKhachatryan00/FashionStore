@@ -88,6 +88,7 @@ a:hover::after {
     border-style: solid;
     border-color: #2c2c2c;
     text-transform: uppercase;
+    align-self: center;
 }
 
 .nav h2 {
